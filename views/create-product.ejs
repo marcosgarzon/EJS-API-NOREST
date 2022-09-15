@@ -1,0 +1,41 @@
+<%- include('./partials/head') %>
+<div class="container bg-secondary d-flex">
+  <div class="row">
+    <div
+      class="col-md-12 pt-4 pb-3 d-flex align-items-center justify-content-center"
+    >
+      <h2 class="justify-content-center">Enter product</h2>
+    </div>
+    <div class="col-md-12 d-flex align-items-center justify-content-center">
+      <form action="/products" method="post">
+        <div class="form-group mt-3 col-md-12">
+          <label>Title:</label>
+          <input
+            class="form-control"
+            placeholder="Enter product"
+            name="title"
+          />
+        </div>
+        <div class="form-group mt-3 col-md-12">
+          <label>Price:</label>
+          <input class="form-control" placeholder="Enter price" name="price" />
+        </div>
+        <div class="form-group mt-3 col-md-12">
+          <label>Thumbnail:</label>
+          <input
+            class="form-control"
+            placeholder="Enter thumbnail"
+            name="thumbnail"
+          />
+        </div>
+        <input class="btn btn-success mt-3 col-md-12" type="submit" />
+      </form>
+    </div>
+    <div
+      class="col-md-12 pb-5 pt-5 d-flex align-items-center justify-content-center"
+    >
+      <a href="/products" class="btn btn-success"> View all products </a>
+    </div>
+  </div>
+</div>
+<%- include('./partials/foot') %>
